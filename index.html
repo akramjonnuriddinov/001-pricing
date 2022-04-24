@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Pricing component</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <!-- NORMALIZE -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- STYLES -->
@@ -12,8 +16,60 @@
 </head>
 <body>
     
+    <main class="main-content">
+        <div class="container">
+            <h1 class="pricing-title">Our Pricing</h1>
+            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+                <label class="pricing-time">
+                    <span class="pricing-time-text">Annually</span>
+                    <input class="pricing-radio" type="radio" required name="radio">
+                </label>
+                <label class="pricing-time">
+                    <input class="pracing-radio" type="radio" required name="radio">
+                    <span class="pricing-time-text">Monthly</span>
+                </label>
+            </form>
 
+            <div class="card-list-wrapper">
+                <ul class="card-list">
+                    <li class="card-item">
+                        <h3 class="card-item-title">Basic</h3>
+                        <span class="card-item-pricing">
+                            <span class="card-item-pricing-text">$</span>
+                            <span class="card-item-pricing-number">19.99</span>
+                        </span>
+                        <p class="card-item-info">500 GB Storage</p>
+                        <p class="card-item-info">2 Users Allowed</p>
+                        <p class="card-item-info">Send up to 3 GB</p>
+                        <a class="card-item-link" href="#">LEARN MORE</a>
+                    </li>
+                    <li class="card-item card-active">
+                        <h3 class="card-item-title">Professional</h3>
+                        <span class="card-item-pricing">
+                            <span class="card-item-pricing-text">$</span>
+                            <span class="card-item-pricing-number">24.99</span>
+                        </span>
+                        <p class="card-item-info">1 TB Storage</p>
+                        <p class="card-item-info">5 Users Allowed</p>
+                        <p class="card-item-info">Send up to 10 GB</p>
+                        <a class="card-item-link card-link-active" href="#">LEARN MORE</a>
+                    </li>
+                    <li class="card-item">
+                        <h3 class="card-item-title">Master</h3>
+                        <span class="card-item-pricing">
+                            <span class="card-item-pricing-text">$</span>
+                            <span class="card-item-pricing-number">39.99</span>
+                        </span>
+                        <p class="card-item-info">2 TB Storage</p>
+                        <p class="card-item-info">10 Users Allowed</p>
+                        <p class="card-item-info">Send up to 20 GB</p>
+                        <a class="card-item-link" href="#">LEARN MORE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
     
-    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
