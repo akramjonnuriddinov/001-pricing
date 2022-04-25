@@ -225,6 +225,7 @@ img {
     padding: 14px 66px;
     color: var(--card-link-text-color);
     border-radius: 6px;
+    line-height: 16px;
     text-decoration: none;
 }
 
