@@ -1,6 +1,7 @@
-const elPracingNum = document.querySelector('.card-item-pricing-number');
-const elRadio = document.querySelector('.pracing-radio');
+const elsPaymentPeriodRadio = querySelectorAll('[name="payment_period"]');
 
-elRadio.addEventListener('click', function () {
-    elPracingNum.textContent = "244.999";
+elsPaymentPeriodRadio.forEach(function (elPaymentPeriodRadio) {
+    elPaymentPeriodRadio.addEventListener('change', function () {
+        console.log(elPaymentPeriodRadio.value);
+    });
 });

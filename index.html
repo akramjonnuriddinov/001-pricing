@@ -17,22 +17,25 @@
 <body>
     
     <main class="main-content">
-        <div class="container">
+        <div class="container page">
             <h1 class="pricing-title">Our Pricing</h1>
-            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-                <label class="pricing-time">
-                    <span class="pricing-time-text">Annually</span>
-                    <input class="pricing-radio" type="radio" required name="radio">
-                </label>
-                <label class="pricing-time">
-                    <input class="pracing-radio" type="radio" required name="radio">
-                    <span class="pricing-time-text">Monthly</span>
-                </label>
+            <form class="pricing-switch" action="https://echo.htmlacademy.ru" method="GET">
+                <div class="switch">
+                    <input class="switch-input-anual visually-hidden" type="radio" name="payment_period" value="anual" id="anualy-payment-radio">
+                    <input class="switch-input-monthly visually-hidden" type="radio" name="payment_period" value="monthly" id="monthly-payment-radio" checked>
+                    <label class="switch-label" for="anualy-payment-radio">Annually</label>
+                    <div class="switch-control">
+                        <div class="switch-circle"></div>
+                        <label class="switch-control-anual" for="anualy-payment-radio"></label>
+                        <label class="switch-control-monthly" for="monthly-payment-radio"></label>
+                    </div>
+                    <label class="switch-label" for="monthly-payment-radio">Monthly</label>
+                </div>
             </form>
 
             <div class="card-list-wrapper">
                 <ul class="card-list">
-                    <li class="card-item">
+                    <li class="card-item" data-payment-anual="199.99" data-oylik="19.99">
                         <h3 class="card-item-title">Basic</h3>
                         <span class="card-item-pricing">
                             <span class="card-item-pricing-text">$</span>
@@ -43,7 +46,7 @@
                         <p class="card-item-info">Send up to 3 GB</p>
                         <a class="card-item-link" href="#">LEARN MORE</a>
                     </li>
-                    <li class="card-item card-active">
+                    <li class="card-item card-active" data-payment-anual="249.99" data-oylik="24.99">
                         <h3 class="card-item-title">Professional</h3>
                         <span class="card-item-pricing">
                             <span class="card-item-pricing-text">$</span>
@@ -54,7 +57,7 @@
                         <p class="card-item-info">Send up to 10 GB</p>
                         <a class="card-item-link card-link-active" href="#">LEARN MORE</a>
                     </li>
-                    <li class="card-item">
+                    <li class="card-item" data-payment-anual="399.99" data-oylik="39.99">
                         <h3 class="card-item-title">Master</h3>
                         <span class="card-item-pricing">
                             <span class="card-item-pricing-text">$</span>
